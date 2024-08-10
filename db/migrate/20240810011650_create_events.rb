@@ -9,6 +9,7 @@ class CreateEvents < ActiveRecord::Migration[7.0]
       t.integer :status, default: 0
       t.string :address
       t.integer :capacity
+      t.float :price, default: 0
       t.text :internal_note
       t.string :description
       t.references :user, null: false, foreign_key: true
