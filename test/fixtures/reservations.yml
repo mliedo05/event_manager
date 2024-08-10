@@ -1,0 +1,15 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  status: 1
+  event: one
+  user: one
+  paid_status: 1
+  amount: 1
+
+two:
+  status: 1
+  event: two
+  user: two
+  paid_status: 1
+  amount: 1
