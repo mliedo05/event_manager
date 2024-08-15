@@ -3,7 +3,7 @@
 class Event < ApplicationRecord
   belongs_to :user
 
-  validates :title, :start_time, presence: true
+  validates :title, :start_time, :end_time, presence: true
   validate :start_time_must_be_today_or_in_the_future
   validate :end_time_must_be_after_start_time
   
