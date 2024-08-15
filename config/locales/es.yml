@@ -1,0 +1,18 @@
+es:
+  activerecord:
+    errors:
+      models:
+        event:
+          attributes:
+            start_time:
+              blank: no puede estar en blanco
+              must_be_today_or_in_the_future: debe ser hoy o en el futuro
+            end_time:
+              blank: no puede estar en blanco
+              must_be_after_start_time: debe ser posterior al inicio
+```     user:
+          attributes:
+            name:
+              blank: no puede estar vacío o contener solo espacios en blanco
+            password:
+              complexity: "debe contener al menos una letra en mayúscula y un número."
