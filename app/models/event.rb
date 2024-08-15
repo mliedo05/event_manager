@@ -16,7 +16,7 @@ class Event < ApplicationRecord
 
     return unless start_time.to_date < Date.current
 
-    errors.add(:start_time, I18n.t('errors.models.event.attributes.start_time.must_be_today_or_in_the_future'))
+    errors.add(:start_time, I18n.t('activerecord.errors.models.event.attributes.start_time.must_be_today_or_in_the_future'))
   end
 
   def end_time_must_be_after_start_time
@@ -24,6 +24,6 @@ class Event < ApplicationRecord
 
     return unless end_time < start_time
 
-    errors.add(:end_time, I18n.t('errors.models.event.attributes.end_time.must_be_after_start_time'))
+    errors.add(:end_time, I18n.t('activerecord.errors.models.event.attributes.end_time.must_be_after_start_time'))
   end
 end

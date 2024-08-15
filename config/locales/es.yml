@@ -10,7 +10,7 @@ es:
             end_time:
               blank: no puede estar en blanco
               must_be_after_start_time: debe ser posterior al inicio
-```     user:
+        user:
           attributes:
             name:
               blank: no puede estar vacío o contener solo espacios en blanco
