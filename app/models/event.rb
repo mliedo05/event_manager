@@ -6,6 +6,8 @@ class Event < ApplicationRecord
   validates :title, :start_time, presence: true
   validate :start_time_must_be_today_or_in_the_future
   validate :end_time_must_be_after_start_time
+  
+  enum :status, { live: 0, pending: 1, cancelled: 2, finished: 3 }
 
   private
 

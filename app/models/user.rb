@@ -9,7 +9,8 @@ class User < ApplicationRecord
   validates :name, :email, presence: true
   validate :password_complexity
   validate :username_cannot_be_blank_or_spaces
-
+  
+  enum :role, { client: 0, provider: 1, admin: 2 }
 
   private
 
