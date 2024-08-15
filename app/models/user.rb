@@ -16,7 +16,7 @@ class User < ApplicationRecord
 
   def name_cannot_be_blank_or_spaces
     if name.present? && name.strip.empty?
-      errors.add(:name, I18n.t('errors.models.event.attributes.name.blank'))
+      errors.add(:name, I18n.t('activerecord.errors.models.user.attributes.name.blank'))
     end
   end
 
@@ -24,7 +24,7 @@ class User < ApplicationRecord
     return if password.blank?
 
     unless password.match?(/^(?=.*[a-zA-Z])(?=.*\d)/) && password.match?(/[A-Z]/)
-      errors.add :password, I18n.t('errors.models.event.attributes.password.complexity')
+      errors.add(:password, I18n.t('activerecord.errors.models.user.attributes.password.complexity'))
     end
   end
 end
