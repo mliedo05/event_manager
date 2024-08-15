@@ -12,7 +12,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 20_240_810_014_837) do
+ActiveRecord::Schema[7.0].define(version: 20_240_815_202_727) do
   # These are extensions that must be enabled in order to support this database
   enable_extension 'plpgsql'
 
@@ -31,7 +31,7 @@ ActiveRecord::Schema[7.0].define(version: 20_240_810_014_837) do
     t.string 'title'
     t.datetime 'start_time', precision: nil
     t.datetime 'end_time', precision: nil
-    t.boolean 'is_paid', default: false
+    t.boolean 'is_paid', default: true
     t.boolean 'is_remote', default: false
     t.integer 'status', default: 0
     t.string 'address'
@@ -71,7 +71,6 @@ ActiveRecord::Schema[7.0].define(version: 20_240_810_014_837) do
     t.integer 'status', default: 0
     t.bigint 'event_id', null: false
     t.bigint 'user_id', null: false
-    t.integer 'paid_status', default: 0
     t.integer 'amount', default: 0
     t.datetime 'created_at', null: false
     t.datetime 'updated_at', null: false
