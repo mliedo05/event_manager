@@ -1,0 +1,23 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  title: MyString
+  start_time: 2024-08-09 21:16:50
+  end_time: 2024-08-09 21:16:50
+  is_paid: false
+  location: MyString
+  capacity: 1
+  internal_note: MyText
+  description: MyString
+  user: one
+
+two:
+  title: MyString
+  start_time: 2024-08-09 21:16:50
+  end_time: 2024-08-09 21:16:50
+  is_paid: false
+  location: MyString
+  capacity: 1
+  internal_note: MyText
+  description: MyString
+  user: two
